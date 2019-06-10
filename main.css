@@ -47,6 +47,11 @@ body {
   cursor: default;
 }
 
+.destinations-list--single {
+  height: 2.75rem;
+  font-size: 1.25rem;
+}
+
 .destinations-list li {
   display: inline-block;
 }
