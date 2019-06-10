@@ -41,7 +41,6 @@ body {
   height: 2.5rem;
   margin: 0;
   padding: 0;
-  color: rgba(255,255,255,0.8);
   font: 400 1rem "Roboto", sans-serif;
   text-align: center;
   cursor: default;
@@ -49,7 +48,6 @@ body {
 
 .destinations-list--home {
   height: 2.75rem;
-  color: #fff;
   font: italic 500 1.25rem "Roboto", sans-serif;
 }
 
