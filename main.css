@@ -47,9 +47,10 @@ body {
   cursor: default;
 }
 
-.destinations-list--single {
+.destinations-list--home {
   height: 2.75rem;
-  font-size: 1.25rem;
+  color: #fff;
+  font: italic 500 1.25rem "Roboto", sans-serif;
 }
 
 .destinations-list li {
@@ -69,11 +70,6 @@ body {
 
 .destinations-list-separator::after {
   content: "|";
-}
-
-.destination-home {
-  color: #fff;
-  font: italic 500 1rem "Roboto", sans-serif;
 }
 
 @media (orientation: portrait) {

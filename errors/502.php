@@ -10,8 +10,8 @@
   </head>
   <body>
     <div class="error-code">502</div>
-    <div class="destinations-list destinations-list--single">
-      <a href="http://twixes.com"><span class="destination-home">Twixes</span></a>
+    <div class="destinations-list destinations-list--home">
+      <a href="http://twixes.com">Twixes</a>
     </div>
     <script src="/main.js"></script>
   </body>
