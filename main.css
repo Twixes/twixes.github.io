@@ -1,0 +1,104 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to bottom right, #ff813d, #ff1500);
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+.t {
+  animation: layerize 1200ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
+  opacity: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font: italic 500 40vh "Roboto", sans-serif;
+  user-select: none;
+  cursor: default;
+}
+
+.error-code {
+  animation: layerize 1200ms cubic-bezier(0.4, 0, 0.2, 1) 100ms forwards;
+  opacity: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font: italic 500 18vh "Roboto Mono", monospace;
+}
+
+.destinations-list {
+  animation: slide-in 800ms cubic-bezier(0, 0, 0.2, 1) 1100ms forwards;
+  opacity: 0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2.5rem;
+  margin: 0;
+  padding: 0;
+  color: rgba(255,255,255,0.8);
+  font: 400 1rem "Roboto", sans-serif;
+  text-align: center;
+  cursor: default;
+}
+
+.destinations-list li {
+  display: inline-block;
+}
+
+.destinations-list a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 0 rgba(255,255,255,0.8);
+}
+
+.destinations-list-separator {
+  margin: 0 0.25rem;
+}
+
+.destinations-list-separator::after {
+  content: "|";
+}
+
+.destination-home {
+  color: #fff;
+  font: italic 500 1rem "Roboto", sans-serif;
+}
+
+@media (orientation: portrait) {
+  #t {
+    font-size: 66vw;
+  }
+  #error {
+    font-size: 30vw;
+  }
+}
+
+@keyframes layerize {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+    text-shadow: 0 0 transparent, 0 0 rgba(255, 255, 255, 0.4), 0 0 rgba(255, 255, 255, 0.3), 0 0 rgba(255, 255, 255, 0.2), 0 0 rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-0.06666em, -0.06666em);
+    text-shadow: 0 0 transparent, 0.03333em 0.03333em rgba(255, 255, 255, 0.4), 0.06666em 0.06666em rgba(255, 255, 255, 0.3), 0.1em 0.1em rgba(255, 255, 255, 0.2), 0.13333em 0.13333em rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  } 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
