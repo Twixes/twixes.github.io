@@ -72,10 +72,10 @@ body {
 }
 
 @media (orientation: portrait) {
-  #t {
+  .t {
     font-size: 66vw;
   }
-  #error {
+  .error-code {
     font-size: 30vw;
   }
 }
