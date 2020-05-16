@@ -63,6 +63,9 @@ body {
   font: italic 500 40vh "Roboto", sans-serif;
   user-select: none;
   cursor: default;
+  @media (orientation: portrait) {
+    font-size: 66vw;
+  }
 }
 
 .error-code {
@@ -72,6 +75,9 @@ body {
   color: $text-color;
   text-align: center;
   font: italic 500 18vh "Roboto Mono", monospace;
+  @media (orientation: portrait) {
+    font-size: 30vw;
+  }
 }
 
 .destinations-list {
@@ -88,11 +94,10 @@ body {
   font: 400 1rem "Roboto", sans-serif;
   text-align: center;
   cursor: default;
-}
-
-.destinations-list--home {
-  height: 2.75rem;
-  font: italic 500 1.25rem "Roboto", sans-serif;
+  &--home {
+    height: 2.75rem;
+    font: italic 500 1.25rem "Roboto", sans-serif;
+  }
 }
 
 .destinations-list li {
@@ -108,17 +113,7 @@ body {
 
 .destinations-list__separator {
   margin: 0 0.25rem;
-}
-
-.destinations-list__separator::after {
-  content: "|";
-}
-
-@media (orientation: portrait) {
-  .t {
-    font-size: 66vw;
-  }
-  .error-code {
-    font-size: 30vw;
+  &::after {
+    content: "|";
   }
 }
