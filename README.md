@@ -1,3 +1,1 @@
-# [Twixes](https://twixes.com)
-
-![T](banner.png)
+[![T](banner.png)](https://twixes.com)
